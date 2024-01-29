@@ -50,13 +50,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'oauth2_provider.middleware.OAuth2TokenMiddleware',
+    # 'oauth2_provider.middleware.OAuth2TokenMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware'
 ]
 
-AUTHENTICATION_BACKENDS = [
-    'oauth2_provider.backends.OAuth2Backend',
-    'django.contrib.auth.backends.ModelBackend',
-]
+# AUTHENTICATION_BACKENDS = [
+#     # 'oauth2_provider.backends.OAuth2Backend',
+#     # 'django.contrib.auth.backends.ModelBackend',
+# ]
 
 ROOT_URLCONF = 'authexample.urls'
 
